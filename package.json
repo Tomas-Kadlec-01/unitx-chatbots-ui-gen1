@@ -1,11 +1,17 @@
 {
-  "name": "vanilla-basic",
+  "name": "Brno-chatbot-static-web-ui-jquery-gen1",
   "version": "1.0.0",
-  "scripts": { 
-    "start": "sirv ./src public --cors --single --no-clear --port 8000",
-    "playwright_test" : "playwright test"
+  "scripts": {
+    "localDev": "nodemon -V server.js"
   },
   "devDependencies": {
-    "@playwright/test": "^1.22.2"
+    "nodemon": "^2.0.20",
+    "body-parser": "^1.20.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.18.1"
+  },
+  "engines": {
+    "node": ">= 16.x",
+    "npm": "> 4.x"
   }
 }

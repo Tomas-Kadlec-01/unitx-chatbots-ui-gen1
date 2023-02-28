@@ -180,7 +180,7 @@ var ConversationPanel = (function () {
           var response = { output: { buttons: [], codes: [] } };
           for (let intent of intentsToLookup) {
             var option = Api.getIntentDescriptionForName(intent)
-            if (!!option.doc) {
+            if (!!option && !!option.doc) {
               response.output.buttons.push(option.doc.description)
               response.output.codes.push(option.doc.text)
             }
